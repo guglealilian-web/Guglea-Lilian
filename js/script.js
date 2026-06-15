@@ -204,25 +204,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // -----------------------------------------------
-// 8. FORMULAR CONTACT — mesaj de confirmare
+// 8. FORMULAR CONTACT — trimite la SheetMonkey
+// fara preventDefault ca sa mearga POST real
 // -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contactForm");
     if (!contactForm) return;
 
-    contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
+    contactForm.addEventListener("submit", function () {
         const btn = contactForm.querySelector(".btn-trimite");
-        btn.textContent = "✔ Mesaj trimis!";
+        btn.textContent = "✔ Se trimite...";
         btn.style.background = "#2e7d32";
         btn.disabled = true;
-
-        setTimeout(function () {
-            contactForm.reset();
-            btn.textContent = "Trimite mesaj!";
-            btn.style.background = "";
-            btn.disabled = false;
-        }, 3000);
+        // formularul se trimite normal la SheetMonkey
     });
 });
