@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Moldova - Pagina Principala</title>
+
+    <!-- style.css: variabile, reset, header, nav, hero, destinatii, despre noi -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+        footer {
+            background-color: #1b5e20;
+            color: #ffffff;
+            padding: 35px 40px 14px;
+            margin-top: 10px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 22px;
+        }
+
+        .footer-contact h3,
+        .footer-social h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 13.5px;
+            margin-bottom: 9px;
+        }
+
+        .footer-contact p a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-contact svg {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+        }
+
+        /* Iconite sociale */
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.12);
+            opacity: 0.9;
+        }
+
+        .social-icon.facebook  { background-color: #1877f2; }
+        .social-icon.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .social-icon.twitter   { background-color: #1da1f2; }
+        .social-icon.tiktok    { background-color: #000000; }
+
+        .footer-social p {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        /* Newsletter */
+        .newsletter-form {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .newsletter-form input[type="email"] {
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 12.5px;
+            color: #333;
+            width: 160px;
+        }
+
+        .newsletter-form button {
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #2e7d32;
+        }
+
+        /* Footer bottom */
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.25);
+            padding-top: 12px;
+            text-align: center;
+            font-size: 12.5px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== BARA ALBA: logo + login ===== -->
+    <div class="header-top">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Discover Moldova Travel">
+        </div>
+        <a href="#" class="btn-login">Login</a>
+    </div>
+
+    <!-- ===== BARA VERDE: navigatie ===== -->
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="pages/destinatii.html">DESTINATIE</a></li>
+            <li><a href="pages/pachete.html">PACHETE TURISTICE</a></li>
+            <li><a href="pages/galerie.html">GALERIE</a></li>
+            <li><a href="pages/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ===== HERO: background-image, overlay, titlu animat ===== -->
+        <section class="hero" style="background-image: url('assets/AboutMoldova.jpg')">
+            <div class="hero-content">
+                <h1>Explorează Moldova!</h1>
+                <a href="#destinatii" class="btn-primary">Descoperă Locurile!</a>
+            </div>
+        </section>
+
+        <!-- ===== DESPRE NOI: Flexbox + iconite ===== -->
+        <section class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/despre-noi.jpg" alt="Familie în siluetă la apus">
+                </div>
+                <div class="about-text">
+                    <h2>Despre Noi</h2>
+                    <p>Suntem o echipă de tineri entuziaști și specialiști în turism, dedicați promovării frumuseților Moldovei. Îmbinăm tehnologia modernă cu ospitalitatea autentică pentru a crea experiențe de călătorie memorabile și vacanțe perfecte.</p>
+                    <a href="#" class="btn-secondary">Despre Noi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DESTINATII: CSS Grid 3 coloane, carduri box-shadow + hover ===== -->
+        <section id="destinatii" class="recommendations">
+            <h2>RECOMANDARI TURISTICE DE TOP</h2>
+
+            <div class="cards-container">
+
+                <article class="card">
+                    <img src="assets/orheiul-vechi.jpg" alt="Orheiul Vechi">
+                    <div class="card-content">
+                        <h3>Orheiul vechi</h3>
+                        <p>Complex istoric, mănăstiri rupestre și peisaje de poveste.</p>
+                        <div class="card-details">
+                            <p><strong>Durată:</strong> 1 zi</p>
+                            <p><strong>Preț:</strong> 25 €</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/vinaria-purcari.jpg" alt="Vinăria Purcari">
+                    <div class="card-content">
+                        <h3>Vinăria Purcari</h3>
+                        <p>Tradiție, degustări de clasă mondială și relaxare la lac.</p>
+                        <div class="card-details">
+                            <p><strong>Durată:</strong> 2 zile</p>
+                            <p><strong>Preț:</strong> 120 €</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/soroca-cetate.jpg" alt="Cetatea Soroca">
+                    <div class="card-content">
+                        <h3>Cetatea Soroca</h3>
+                        <p>Călătorie în timp la porțile Nistrului, istorie medievală.</p>
+                        <div class="card-details">
+                            <p><strong>Durată:</strong> 1 zi</p>
+                            <p><strong>Preț:</strong> 30 €</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Date de contact</h3>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.55 5.55l.83-.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+                    </svg>
+                    +373 22 123 456
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <polyline points="2,4 12,13 22,4"/>
+                    </svg>
+                    <a href="mailto:contact@agentie-turism.md">contact@agentie-turism.md</a>
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Bd. Ștefan cel Mare și Sfânt, Nr. 10, Chișinău
+                </p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Urmărește-ne</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook">f</a>
+                    <a href="#" class="social-icon instagram">&#x1F4F7;</a>
+                    <a href="#" class="social-icon twitter">t</a>
+                    <a href="#" class="social-icon tiktok">&#9835;</a>
+                </div>
+                <p>Fii la curent cu ofertele!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="email.com" required>
+                    <button type="submit">Înregistrare</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agenție Turism. Toate drepturile rezervate. | ANPC</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
