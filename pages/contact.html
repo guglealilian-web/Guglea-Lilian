@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Moldova - Contact</title>
-    <link rel="stylesheet" href="../style.css">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -84,13 +83,13 @@
 
                 <h2 class="contact-slogan">Așteptam cu drag<br>să vă auzim!</h2>
 
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Nume" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Telefon">
-                    <input type="text" placeholder="Subiect">
-                    <textarea placeholder="Mesaj..." rows="4" required></textarea>
-                    <button type="submit" class="btn-trimite">Trimite mesaj!</button>
+                <form class="contact-form" action="https://api.sheetmonkey.io/form/jupfwyince239hZrwpzdyR" method="post" id="contactForm">
+                        <input type="text" name="Nume" placeholder="Nume" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input type="tel" name="Telefon" placeholder="Telefon">
+                        <input type="text" name="Subiect" placeholder="Subiect">
+                        <textarea name="Mesaj" placeholder="Mesaj..." rows="4" required></textarea>
+                        <button type="submit" class="btn-trimite">Trimite mesaj!</button>
                 </form>
             </div>
 
