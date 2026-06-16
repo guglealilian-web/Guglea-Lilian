@@ -1,4 +1,11 @@
+// =============================================
+//   DISCOVER MOLDOVA - script.js
+// =============================================
 
+
+// -----------------------------------------------
+// 1. NAVIGATIE ACTIVA — evidentiaza link-ul curent
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".header-nav ul li a");
     const currentPage = window.location.pathname.split("/").pop();
@@ -12,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// -----------------------------------------------
+// 2. NEWSLETTER — mesaj de confirmare la submit
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".newsletter-form");
     if (form) {
@@ -33,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// -----------------------------------------------
+// 3. CAUTARE DESTINATII — filtreaza cardurile live
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.querySelector(".search-box input");
     const cards = document.querySelectorAll(".dest-card");
@@ -56,7 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// -----------------------------------------------
+// 4. SCROLL TO TOP — buton apare dupa scroll
+// -----------------------------------------------
 (function () {
+    // Cream butonul
     const btn = document.createElement("button");
     btn.textContent = "↑";
     btn.title = "Înapoi sus";
@@ -102,6 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 })();
 
+
+// -----------------------------------------------
+// 5. ANIMATIE CARDURI — fade-in la incarcare
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const allCards = document.querySelectorAll(".card, .dest-card");
 
@@ -117,6 +141,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// -----------------------------------------------
+// 6. SLIDER — Pachete Turistice (auto + dots)
+// -----------------------------------------------
 (function () {
     const track = document.getElementById("sliderTrack");
     const dots = document.querySelectorAll(".dot");
@@ -127,17 +155,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function goToSlide(index) {
         current = index;
+        // Arata 3 slide-uri deodata, scrollam cu 1 slide (33.333%)
         track.style.transform = "translateX(-" + (current * 33.333) + "%)";
         dots.forEach(function (d, i) {
             d.classList.toggle("active", i === current);
         });
     }
+
+    // Expune global pentru onclick din HTML
     window.goToSlide = goToSlide;
+
+    // Auto-play la fiecare 3 secunde
     setInterval(function () {
         goToSlide((current + 1) % total);
     }, 3000);
 })();
 
+
+// -----------------------------------------------
+// 7. FILTRE GALERIE — afiseaza/ascunde imagini
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const filtreBtns = document.querySelectorAll(".filtru-btn");
     const galerieItems = document.querySelectorAll(".galerie-item");
@@ -146,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     filtreBtns.forEach(function (btn) {
         btn.addEventListener("click", function () {
+            // Activeaza butonul selectat
             filtreBtns.forEach(function (b) { b.classList.remove("active"); });
             btn.classList.add("active");
 
@@ -164,6 +202,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// -----------------------------------------------
+// 8. FORMULAR CONTACT — trimite la SheetMonkey
+// fara preventDefault ca sa mearga POST real
+// -----------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contactForm");
     if (!contactForm) return;
@@ -173,5 +216,6 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.textContent = "✔ Se trimite...";
         btn.style.background = "#2e7d32";
         btn.disabled = true;
+        // formularul se trimite normal la SheetMonkey
     });
 });
