@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Moldova - Pachete Turistice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
 
-    <!-- BARA VERDE -->
+    
     <div class="header-top">
         <div class="logo">
             <img src="../assets/logo.png" alt="Discover Moldova Travel">
@@ -16,7 +18,7 @@
         <a href="#" class="btn-login">Login</a>
     </div>
 
-    <!-- BARA ALBASTRA -->
+    
     <nav class="header-nav">
         <ul>
             <li><a href="../index.html">HOME</a></li>
@@ -29,15 +31,13 @@
 
     <main>
 
-        <!-- SLIDER -->
+        
         <section class="slider">
             <div class="slider-track" id="sliderTrack">
                 <div class="slide"><img src="../assets/orheiul-vechi.jpg" alt="Orheiul Vechi"></div>
                 <div class="slide"><img src="../assets/soroca-cetate.jpg" alt="Cetatea Soroca"></div>
                 <div class="slide"><img src="../assets/vinaria-purcari.jpg" alt="Vinaria Purcari"></div>
-                <div class="slide"><img src="../assets/prut.jpg" alt="Lunca Prutului"></div>
-                <div class="slide"><img src="../assets/cricova.jpg" alt="Vinaria Cricova"></div>
-                <div class="slide"><img src="../assets/tipova.jpg" alt="Manastirea Tipova"></div>
+                <div class="slide"><img src="../assets/despre-noi.jpg" alt="Moldova"></div>
             </div>
             <div class="slider-dots" id="sliderDots">
                 <span class="dot active" onclick="goToSlide(0)"></span>
@@ -47,16 +47,16 @@
             </div>
         </section>
 
-        <!-- TITLU -->
+        
         <div class="pachete-title">
             <h2>Descopera Pachetele<br>Noastre Exclusive</h2>
         </div>
 
-        <!-- CARDURI PACHETE -->
+        
         <section class="pachete-grid">
 
-            <article class="pachet-card">
-                <img src="../assets/cricova.jpg" alt="Cricova">
+            <article class="pachet-card recomandat">
+                <img src="../assets/orheiul-vechi.jpg" alt="Cricova">
                 <div class="pachet-info">
                     <h3>Cricova</h3>
                     <ul>
@@ -69,7 +69,7 @@
                 </div>
             </article>
 
-            <article class="pachet-card">
+            <article class="pachet-card recomandat">
                 <img src="../assets/orheiul-vechi.jpg" alt="Orheiul Vechi">
                 <div class="pachet-info">
                     <h3>Orheiul Vechi</h3>
@@ -84,7 +84,7 @@
             </article>
 
             <article class="pachet-card">
-                <img src="../assets/saharna.jpg" alt="Saharna">
+                <img src="../assets/soroca-cetate.jpg" alt="Saharna">
                 <div class="pachet-info">
                     <h3>Saharna</h3>
                     <ul>
@@ -98,7 +98,7 @@
             </article>
 
             <article class="pachet-card">
-                <img src="../assets/tipova.jpg" alt="Tipova">
+                <img src="../assets/vinaria-purcari.jpg" alt="Tipova">
                 <div class="pachet-info">
                     <h3>Tipova</h3>
                     <ul>
@@ -112,7 +112,7 @@
             </article>
 
             <article class="pachet-card">
-                <img src="../assets/castel_mimi.webp" alt="Castel Mimi">
+                <img src="../assets/despre-noi.jpg" alt="Castel Mimi">
                 <div class="pachet-info">
                     <h3>Castel Mimi</h3>
                     <ul>
@@ -126,7 +126,7 @@
             </article>
 
             <article class="pachet-card">
-                <img src="../assets/prut.jpg" alt="Lunca Prutului">
+                <img src="../assets/AboutMoldova.jpg" alt="Lunca Prutului">
                 <div class="pachet-info">
                     <h3>Lunca Prutului</h3>
                     <ul>
@@ -143,7 +143,7 @@
 
     </main>
 
-    <!-- FOOTER -->
+    
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
@@ -189,6 +189,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
