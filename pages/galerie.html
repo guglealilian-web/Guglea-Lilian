@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Moldova - Galerie</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
 
-    
+    <!-- BARA VERDE -->
     <div class="header-top">
         <div class="logo">
             <img src="../assets/logo.png" alt="Discover Moldova Travel">
@@ -17,7 +16,7 @@
         <a href="#" class="btn-login">Login</a>
     </div>
 
-    
+    <!-- BARA ALBASTRA -->
     <nav class="header-nav">
         <ul>
             <li><a href="../index.html">HOME</a></li>
@@ -30,29 +29,40 @@
 
     <main>
 
-        
+        <!-- HERO GALERIE -->
         <section class="galerie-hero" style="background-image: url('../assets/AboutMoldova.jpg')">
             <div class="galerie-hero-content">
                 <h1>Imagini din Inima Moldovei!</h1>
             </div>
         </section>
 
-        
+        <!-- FILTRE + GALERIE -->
         <section class="galerie-section">
+
             <div class="galerie-filtre">
                 <button class="filtru-btn active" data-filter="toate">Toate</button>
                 <button class="filtru-btn" data-filter="peisaje">Peisaje</button>
-                <button class="filtru-btn" data-filter="cultura">Cultura</button>
+                <button class="filtru-btn" data-filter="cultura">Cultură</button>
                 <button class="filtru-btn" data-filter="gastro">Gastro</button>
             </div>
 
-            
+            <!-- GRID IMAGINI -->
             <div class="galerie-grid" id="galerieGrid">
 
+                <!-- PEISAJE -->
                 <div class="galerie-item" data-category="peisaje">
-                    <img src="../assets/AboutMoldova.jpg" alt="Peisaj Moldova">
+                    <img src="../assets/prut.jpg" alt="Prut">
                 </div>
 
+                <div class="galerie-item" data-category="peisaje">
+                    <img src="../assets/tipova.jpg" alt="Țipova">
+                </div>
+
+                <div class="galerie-item" data-category="peisaje">
+                    <img src="../assets/saharna.jpg" alt="Saharna">
+                </div>
+
+                <!-- CULTURA -->
                 <div class="galerie-item" data-category="cultura">
                     <img src="../assets/orheiul-vechi.jpg" alt="Orheiul Vechi">
                 </div>
@@ -61,82 +71,86 @@
                     <img src="../assets/soroca-cetate.jpg" alt="Cetatea Soroca">
                 </div>
 
-                <div class="galerie-item" data-category="peisaje">
-                    <img src="../assets/vinaria-purcari.jpg" alt="Vinaria Purcari">
-                </div>
-
-                <div class="galerie-item" data-category="peisaje">
-                    <img src="../assets/AboutMoldova.jpg" alt="Peisaj 2">
-                </div>
-
                 <div class="galerie-item" data-category="cultura">
-                    <img src="../assets/orheiul-vechi.jpg" alt="Orheiul 2">
+                    <img src="../assets/castel_mimi.webp" alt="Castel Mimi">
                 </div>
 
-                <div class="galerie-item" data-category="cultura">
-                    <img src="../assets/soroca-cetate.jpg" alt="Cetate 2">
+                <!-- GASTRO -->
+                <div class="galerie-item" data-category="gastro">
+                    <img src="../assets/cricova.jpg" alt="Cricova">
                 </div>
 
                 <div class="galerie-item" data-category="gastro">
-                    <img src="../assets/despre-noi.jpg" alt="Gastro Moldova">
+                    <img src="../assets/vinaria-purcari.jpg" alt="Vinăria Purcari">
                 </div>
 
                 <div class="galerie-item" data-category="gastro">
-                    <img src="../assets/vinaria-purcari.jpg" alt="Vinuri">
+                    <img src="../assets/Cahul.jpg" alt="Cahul">
                 </div>
 
             </div>
+
         </section>
 
     </main>
 
-    
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
+
             <div class="footer-contact">
                 <h3>Date de contact</h3>
+
                 <p>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.55 5.55l.83-.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
                     </svg>
                     +373 22 123 456
                 </p>
+
                 <p>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
                         <polyline points="2,4 12,13 22,4"/>
                     </svg>
                     <a href="mailto:contact@agentie-turism.md">contact@agentie-turism.md</a>
                 </p>
+
                 <p>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                         <circle cx="12" cy="10" r="3"/>
                     </svg>
                     Bd. Ștefan cel Mare și Sfânt, Nr. 10, Chișinău
                 </p>
             </div>
+
             <div class="footer-social">
-                <h3>Urmareste-ne</h3>
+                <h3>Urmărește-ne</h3>
+
                 <div class="social-icons">
                     <a href="#" class="social-icon facebook">f</a>
-                    <a href="#" class="social-icon instagram">&#x1F4F7;</a>
+                    <a href="#" class="social-icon instagram">&#128247;</a>
                     <a href="#" class="social-icon twitter">t</a>
                     <a href="#" class="social-icon tiktok">&#9835;</a>
                 </div>
+
                 <p>Fii la curent cu ofertele!</p>
+
                 <form class="newsletter-form">
                     <input type="email" placeholder="email.com" required>
                     <button type="submit">Înregistrare</button>
                 </form>
             </div>
+
         </div>
+
         <div class="footer-bottom">
             <p>&copy; 2026 Agenție Turism. Toate drepturile rezervate. | ANPC</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
+
 </body>
 </html>
