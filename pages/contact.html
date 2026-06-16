@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Moldova - Contact</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
 
-    <!-- BARA VERDE -->
+    
     <div class="header-top">
         <div class="logo">
             <img src="../assets/logo.png" alt="Discover Moldova Travel">
@@ -16,7 +17,7 @@
         <a href="#" class="btn-login">Login</a>
     </div>
 
-    <!-- BARA ALBASTRA -->
+    
     <nav class="header-nav">
         <ul>
             <li><a href="../index.html">HOME</a></li>
@@ -31,7 +32,7 @@
 
         <section class="contact-section">
 
-            <!-- STANGA: harta + cum ajungi -->
+            
             <div class="contact-left">
                 <div class="contact-map">
                     <iframe
@@ -55,7 +56,7 @@
                 </div>
             </div>
 
-            <!-- DREAPTA: date + formular -->
+            
             <div class="contact-right">
                 <div class="contact-info-top">
                     <h3>Date de contact</h3>
@@ -83,14 +84,13 @@
 
                 <h2 class="contact-slogan">Așteptam cu drag<br>să vă auzim!</h2>
 
-                <form class="contact-form" action="https://api.sheetmonkey.io/form/jupfwyince239hZrwpzdyR" method="post" id="contactForm">
-                        <input type="text" name="Nume" placeholder="Nume" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <input type="tel" name="Telefon" placeholder="Telefon">
-                        <input type="text" name="Subiect" placeholder="Subiect">
-                        <textarea name="Mesaj" placeholder="Mesaj..." rows="4" required></textarea>
-                        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
-                        <button type="submit" class="btn-trimite">Trimite mesaj!</button>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Nume" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Telefon">
+                    <input type="text" placeholder="Subiect">
+                    <textarea placeholder="Mesaj..." rows="4" required></textarea>
+                    <button type="submit" class="btn-trimite">Trimite mesaj!</button>
                 </form>
             </div>
 
@@ -98,7 +98,7 @@
 
     </main>
 
-    <!-- FOOTER -->
+    
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
@@ -144,6 +144,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
