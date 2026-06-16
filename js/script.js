@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".header-nav ul li a");
     const currentPage = window.location.pathname.split("/").pop();
@@ -56,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 (function () {
-    
     const btn = document.createElement("button");
     btn.textContent = "↑";
     btn.title = "Înapoi sus";
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.body.appendChild(btn);
 
-    
+    // Arata/ascunde la scroll
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
             btn.style.display = "block";
@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    
+    // Click — scroll sus
     btn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    
+    // Hover
     btn.addEventListener("mouseenter", function () {
         btn.style.background = "#2e7d32";
     });
@@ -127,17 +127,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function goToSlide(index) {
         current = index;
-        
         track.style.transform = "translateX(-" + (current * 33.333) + "%)";
         dots.forEach(function (d, i) {
             d.classList.toggle("active", i === current);
         });
     }
-
-    
     window.goToSlide = goToSlide;
-
-    
     setInterval(function () {
         goToSlide((current + 1) % total);
     }, 3000);
@@ -151,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     filtreBtns.forEach(function (btn) {
         btn.addEventListener("click", function () {
-            
             filtreBtns.forEach(function (b) { b.classList.remove("active"); });
             btn.classList.add("active");
 
@@ -179,6 +173,5 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.textContent = "✔ Se trimite...";
         btn.style.background = "#2e7d32";
         btn.disabled = true;
-        
     });
 });
