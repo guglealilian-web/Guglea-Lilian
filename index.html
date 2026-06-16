@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Moldova - Pagina Principala</title>
 
-    
+    <!-- style.css: variabile, reset, header, nav, hero, destinatii, despre noi -->
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        
-
         
         footer {
             background-color: #1b5e20;
@@ -54,7 +52,7 @@
             flex-shrink: 0;
         }
 
-        
+        /* Iconite sociale */
         .social-icons {
             display: flex;
             gap: 10px;
@@ -90,7 +88,7 @@
             margin-bottom: 10px;
         }
 
-        
+        /* Newsletter */
         .newsletter-form {
             display: flex;
             gap: 8px;
@@ -123,7 +121,7 @@
             background-color: #2e7d32;
         }
 
-        
+        /* Footer bottom */
         .footer-bottom {
             border-top: 1px solid rgba(255,255,255,0.25);
             padding-top: 12px;
@@ -136,7 +134,7 @@
 </head>
 <body>
 
-    
+    <!-- ===== BARA ALBA: logo + login ===== -->
     <div class="header-top">
         <div class="logo">
             <img src="assets/logo.png" alt="Discover Moldova Travel">
@@ -144,7 +142,7 @@
         <a href="#" class="btn-login">Login</a>
     </div>
 
-    
+    <!-- ===== BARA VERDE: navigatie ===== -->
     <nav class="header-nav">
         <ul>
             <li><a href="index.html" class="active">HOME</a></li>
@@ -157,7 +155,7 @@
 
     <main>
 
-        
+        <!-- ===== HERO: background-image, overlay, titlu animat ===== -->
         <section class="hero" style="background-image: url('assets/AboutMoldova.jpg')">
             <div class="hero-content">
                 <h1>Explorează Moldova!</h1>
@@ -165,7 +163,7 @@
             </div>
         </section>
 
-        
+        <!-- ===== DESPRE NOI: Flexbox + iconite ===== -->
         <section class="about">
             <div class="about-container">
                 <div class="about-image">
@@ -179,7 +177,7 @@
             </div>
         </section>
 
-        
+        <!-- ===== DESTINATII: CSS Grid 3 coloane, carduri box-shadow + hover ===== -->
         <section id="destinatii" class="recommendations">
             <h2>RECOMANDARI TURISTICE DE TOP</h2>
 
@@ -226,7 +224,7 @@
 
     </main>
 
-    
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
@@ -274,7 +272,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
